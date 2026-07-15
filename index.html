@@ -5,202 +5,205 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bản đồ ước lượng ranh giới 28 khu phố mới - Phường Thới An, Quận 12</title>
 <style>
-  :root {
-    --navy: #14395e;
-    --border: #d7dee6;
-    --bg: #f5f7fa;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: var(--bg);
-    color: #1c2733;
-  }
-  header {
-    background: var(--navy);
-    color: #fff;
-    padding: 20px 16px;
-    text-align: center;
-  }
-  header h1 {
-    margin: 0 0 4px;
-    font-size: clamp(18px, 4vw, 26px);
-  }
-  header p {
-    margin: 0;
-    opacity: 0.85;
-    font-size: 14px;
-  }
-  main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px 16px 60px;
-  }
-  .card {
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 16px;
-    margin-bottom: 24px;
-  }
-  .map-wrap {
-    text-align: center;
-  }
-  .map-wrap img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-    border: 1px solid var(--border);
-  }
-  .map-placeholder {
-    border: 2px dashed #b8c4d0;
-    border-radius: 8px;
-    padding: 60px 16px;
-    color: #7a8a9a;
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  h2 {
-    font-size: 17px;
-    color: var(--navy);
-    margin-top: 0;
-    border-bottom: 2px solid var(--navy);
-    padding-bottom: 8px;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14px;
-  }
-  th, td {
-    border: 1px solid var(--border);
-    padding: 8px 10px;
-    text-align: left;
-    vertical-align: top;
-  }
-  th {
-    background: var(--navy);
-    color: #fff;
-    position: sticky;
-    top: 0;
-  }
-  tr:nth-child(even) { background: #f0f4f8; }
-  .table-wrap {
-    max-height: 480px;
-    overflow-y: auto;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-  }
-  .routes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 8px 20px;
-    font-size: 14px;
-  }
-  .routes li { margin-bottom: 4px; }
-  .note {
-    background: #fff8e1;
-    border: 1px solid #f0d98c;
-    border-radius: 8px;
-    padding: 14px 16px;
-    font-size: 13px;
-    line-height: 1.6;
-    color: #6b5a10;
-  }
-  .qr-section {
-    text-align: center;
-  }
-  .qr-section img {
-    width: 180px;
-    height: 180px;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 8px;
-    background: #fff;
-  }
-  .qr-section p {
-    font-size: 13px;
-    color: #56606b;
-    margin-top: 10px;
-  }
-  footer {
-    text-align: center;
-    font-size: 12px;
-    color: #8a97a3;
-    padding: 20px 16px;
-  }
+:root {
+--navy: #14395e;
+--border: #d7dee6;
+--bg: #f5f7fa;
+}
+* { box-sizing: border-box; }
+body {
+margin: 0;
+font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+background: var(--bg);
+color: #1c2733;
+}
+header {
+background: var(--navy);
+color: #fff;
+padding: 20px 16px;
+text-align: center;
+}
+header h1 {
+margin: 0 0 4px;
+font-size: clamp(18px, 4vw, 26px);
+}
+header p {
+margin: 0;
+opacity: 0.85;
+font-size: 14px;
+}
+main {
+max-width: 1100px;
+margin: 0 auto;
+padding: 20px 16px 60px;
+}
+.card {
+background: #fff;
+border: 1px solid var(--border);
+border-radius: 10px;
+padding: 16px;
+margin-bottom: 24px;
+}
+.map-wrap {
+text-align: center;
+}
+.map-wrap img {
+max-width: 100%;
+height: auto;
+border-radius: 6px;
+border: 1px solid var(--border);
+}
+.map-placeholder {
+border: 2px dashed #b8c4d0;
+border-radius: 8px;
+padding: 60px 16px;
+color: #7a8a9a;
+font-size: 14px;
+line-height: 1.6;
+}
+h2 {
+font-size: 17px;
+color: var(--navy);
+margin-top: 0;
+border-bottom: 2px solid var(--navy);
+padding-bottom: 8px;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+font-size: 14px;
+}
+th, td {
+border: 1px solid var(--border);
+padding: 8px 10px;
+text-align: left;
+vertical-align: top;
+}
+th {
+background: var(--navy);
+color: #fff;
+position: sticky;
+top: 0;
+}
+tr:nth-child(even) { background: #f0f4f8; }
+.table-wrap {
+max-height: 480px;
+overflow-y: auto;
+border: 1px solid var(--border);
+border-radius: 6px;
+}
+.routes {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+gap: 8px 20px;
+font-size: 14px;
+}
+.routes li { margin-bottom: 4px; }
+.note {
+background: #fff8e1;
+border: 1px solid #f0d98c;
+border-radius: 8px;
+padding: 14px 16px;
+font-size: 13px;
+line-height: 1.6;
+color: #6b5a10;
+}
+.qr-section {
+text-align: center;
+}
+.qr-section img {
+width: 180px;
+height: 180px;
+border: 1px solid var(--border);
+border-radius: 8px;
+padding: 8px;
+background: #fff;
+}
+.qr-section p {
+font-size: 13px;
+color: #56606b;
+margin-top: 10px;
+}
+footer {
+text-align: center;
+font-size: 12px;
+color: #8a97a3;
+padding: 20px 16px;
+}
 </style>
 </head>
 <body>
 
 <header>
-  <h1>BẢN ĐỒ ƯỚC LƯỢNG RANH GIỚI 28 KHU PHỐ MỚI</h1>
-  <p>Phường Thới An – Quận 12, TP. Hồ Chí Minh (Sau sắp xếp theo phương án 01/7/2026)</p>
+<h1>BẢN ĐỒ ƯỚC LƯỢNG RANH GIỚI 28 KHU PHỐ MỚI</h1>
+<p>Phường Thới An – Quận 12, TP. Hồ Chí Minh (Sau sắp xếp theo phương án 01/7/2026)</p>
 </header>
 
 <main>
 
-  <div class="card map-wrap">
-    <h2>Bản đồ</h2>
+<div class="card map-wrap">
+<h2>Bản đồ</h2>
 <div style="position:relative;width:100%;padding-bottom:75%;overflow:hidden;border-radius:6px;border:1px solid var(--border);">
-      <iframe src="https://www.google.com/maps/d/embed?mid=1-ZosZ4MKHTHillSPW9jPwZMVtxUi14E&ehbc=2E312F" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-  </div>
+<iframe src="https://www.google.com/maps/d/embed?mid=1-ZosZ4MKHTHillSPW9jPwZMVtxUi14E&ehbc=2E312F" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</div>
 
-  <div class="card qr-section">
-    <h2>Truy cập nhanh bằng mã QR</h2>
-    <img id="qr-code" alt="Mã QR truy cập trang">
-    <p>Quét mã QR để mở trang này trên điện thoại.</p>
-  </div>
+<div class="card map-wrap">
+<h2>Bản đồ khu phố &amp; số điện thoại tổ trưởng</h2>
+<img src="1784106845137_7228465078776768874_7228465078776768874_4378b4c6ea89ee96ebde9320456a0bfd.jpg" alt="Bản đồ ranh giới các khu phố và số điện thoại tổ trưởng khu phố">
+</div>
+
+<div class="card qr-section">
+<h2>Truy cập nhanh bằng mã QR</h2>
+<img id="qr-code" alt="Mã QR truy cập trang">
+<p>Quét mã QR để mở trang này trên điện thoại.</p>
+</div>
 
 </main>
 
 <footer>
-  Trang tham khảo cộng đồng — không phải kênh thông tin chính thức của UBND phường Thới An.
+Trang tham khảo cộng đồng — không phải kênh thông tin chính thức của UBND phường Thới An.
 </footer>
 
 <script>
-  const kpData = [
-    [1, "Lê Đức Thọ", "Hai bên đường Lê Đức Thọ, khu KP1 và KP2 cũ"],
-    [2, "Thới An 4", "Đường Thới An 4 và khu dân cư phía Đông Lê Đức Thọ"],
-    [3, "Dự án Phú Nhuận (Lê Thị Riêng)", "Khu dự án Phú Nhuận, Lê Thị Riêng đoạn đầu"],
-    [4, "Hẻm 282 Lê Thị Riêng (CC Hà Đô)", "Chung cư Hà Đô, hẻm 282 Lê Thị Riêng và khu lân cận"],
-    [5, "Trần Thị Cờ – Chùa Hưng Quang", "Đường Trần Thị Cờ, chùa Hưng Quang và khu xung quanh"],
-    [6, "Thới An 20", "Đường Thới An 20, khu giữa Thới An và Lê Thị Riêng"],
-    [7, "97 Trần Thị Cờ", "Đường Trần Thị Cờ đoạn số 97 và khu phía Bắc"],
-    [8, "412 Lê Thị Riêng", "Đường Lê Thị Riêng đoạn số 412 và khu dân cư hai bên"],
-    [9, "534 Lê Quang Hòa", "Đường Lê Quang Hòa đoạn số 534 và khu lân cận"],
-    [10, "Võ Thị Phải (dùng chung trụ sở) – Phía Tây", "Đường Võ Thị Phải phía Tây (dùng chung với KP11)"],
-    [11, "Võ Thị Phải – Phía Đông", "Đường Võ Thị Phải phía Đông (dùng chung với KP10)"],
-    [12, "573 Lê Thị Riêng", "Đường Lê Thị Riêng đoạn số 573"],
-    [13, "754 Lê Văn Khương", "Đường Lê Văn Khương đoạn số 754 và khu vực phía Bắc"],
-    [14, "258 Lê Quang Hòa", "Đường Lê Quang Hòa 258 và khu vế KP27, 34, 37, 38 cũ"],
-    [15, "Thanh Xuân 52", "Đường Thanh Xuân 52 và khu dân cư lân cận"],
-    [16, "Thanh Xuân 43 – Bắc", "Đường Thanh Xuân 43, đoạn phía Bắc"],
-    [17, "Thanh Xuân 43 – Nam", "Đường Thanh Xuân 43, đoạn phía Nam"],
-    [18, "02 Lê Quang Hòa", "Đường Lê Quang Hòa đoạn số 02 và khu KP35, 36 cũ"],
-    [19, "(dùng chung KP14)", "Khu Lê Quang Hòa phía Tây (dùng chung trụ sở với KP14)"],
-    [20, "TTYT Thới An – Tô Ngọc Vân", "Khu trung tâm y tế Thới An, đường Tô Ngọc Vân"],
-    [21, "Thanh Xuân 14 – Picity", "Đường Thanh Xuân 14, khu dân cư Picity"],
-    [22, "Thanh Xuân 24", "Đường Thanh Xuân 24"],
-    [23, "295 Tô Ngọc Vân", "Đường Tô Ngọc Vân số 295, khu 44, 45, 46, 48 cũ"],
-    [24, "Hẻm Đình Quới Xuân", "Hẻm Đình Quới Xuân, đường Tô Ngọc Vân"],
-    [25, "Khu Tô Ngọc Vân – đối diện KP23", "Khu Tô Ngọc Vân đối diện KP23"],
-    [26, "Thanh Xuân 13", "Đường Thanh Xuân 13"],
-    [27, "Trong chung cư Picity", "Bên trong chung cư Picity"],
-    [28, "Đường N15", "Khu đường N15 và các tuyến nội bộ phía Tây Bắc phường"],
-  ];
+const kpData = [
+[1, "Lê Đức Thọ", "Hai bên đường Lê Đức Thọ, khu KP1 và KP2 cũ"],
+[2, "Thới An 4", "Đường Thới An 4 và khu dân cư phía Đông Lê Đức Thọ"],
+[3, "Dự án Phú Nhuận (Lê Thị Riêng)", "Khu dự án Phú Nhuận, Lê Thị Riêng đoạn đầu"],
+[4, "Hẻm 282 Lê Thị Riêng (CC Hà Đô)", "Chung cư Hà Đô, hẻm 282 Lê Thị Riêng và khu lân cận"],
+[5, "Trần Thị Cờ – Chùa Hưng Quang", "Đường Trần Thị Cờ, chùa Hưng Quang và khu xung quanh"],
+[6, "Thới An 20", "Đường Thới An 20, khu giữa Thới An và Lê Thị Riêng"],
+[7, "97 Trần Thị Cờ", "Đường Trần Thị Cờ đoạn số 97 và khu phía Bắc"],
+[8, "412 Lê Thị Riêng", "Đường Lê Thị Riêng đoạn số 412 và khu dân cư hai bên"],
+[9, "534 Lê Quang Hòa", "Đường Lê Quang Hòa đoạn số 534 và khu lân cận"],
+[10, "Võ Thị Phải (dùng chung trụ sở) – Phía Tây", "Đường Võ Thị Phải phía Tây (dùng chung với KP11)"],
+[11, "Võ Thị Phải – Phía Đông", "Đường Võ Thị Phải phía Đông (dùng chung với KP10)"],
+[12, "573 Lê Thị Riêng", "Đường Lê Thị Riêng đoạn số 573"],
+[13, "754 Lê Văn Khương", "Đường Lê Văn Khương đoạn số 754 và khu vực phía Bắc"],
+[14, "258 Lê Quang Hòa", "Đường Lê Quang Hòa 258 và khu vế KP27, 34, 37, 38 cũ"],
+[15, "Thanh Xuân 52", "Đường Thanh Xuân 52 và khu dân cư lân cận"],
+[16, "Thanh Xuân 43 – Bắc", "Đường Thanh Xuân 43, đoạn phía Bắc"],
+[17, "Thanh Xuân 43 – Nam", "Đường Thanh Xuân 43, đoạn phía Nam"],
+[18, "02 Lê Quang Hòa", "Đường Lê Quang Hòa đoạn số 02 và khu KP35, 36 cũ"],
+[19, "(dùng chung KP14)", "Khu Lê Quang Hòa phía Tây (dùng chung trụ sở với KP14)"],
+[20, "TTYT Thới An – Tô Ngọc Vân", "Khu trung tâm y tế Thới An, đường Tô Ngọc Vân"],
+[21, "Thanh Xuân 14 – Picity", "Đường Thanh Xuân 14, khu dân cư Picity"],
+[22, "Thanh Xuân 24", "Đường Thanh Xuân 24"],
+[23, "295 Tô Ngọc Vân", "Đường Tô Ngọc Vân số 295, khu 44, 45, 46, 48 cũ"],
+[24, "Hẻm Đình Quới Xuân", "Hẻm Đình Quới Xuân, đường Tô Ngọc Vân"],
+[25, "Khu Tô Ngọc Vân – đối diện KP23", "Khu Tô Ngọc Vân đối diện KP23"],
+[26, "Thanh Xuân 13", "Đường Thanh Xuân 13"],
+[27, "Trong chung cư Picity", "Bên trong chung cư Picity"],
+[28, "Đường N15", "Khu đường N15 và các tuyến nội bộ phía Tây Bắc phường"],
+];
 
-  
-
-  // Generate QR code pointing to the page's own published URL.
-  // window.location.href works once this page is actually hosted (e.g. on GitHub Pages),
-  // so the QR always points to wherever this file ends up living - no rebuild needed.
-  const pageUrl = window.location.href.split('#')[0];
-  const qrImg = document.getElementById("qr-code");
-  qrImg.src = "https://api.qrserver.com/v1/create-qr-code/?size=360x360&data=" + encodeURIComponent(pageUrl);
-  qrImg.alt = "Mã QR cho " + pageUrl;
+// Generate QR code pointing to the page's own published URL.
+// window.location.href works once this page is actually hosted (e.g. on GitHub Pages),
+// so the QR always points to wherever this file ends up living - no rebuild needed.
+const pageUrl = window.location.href.split('#')[0];
+const qrImg = document.getElementById("qr-code");
+qrImg.src = "https://api.qrserver.com/v1/create-qr-code/?size=360x360&data=" + encodeURIComponent(pageUrl);
+qrImg.alt = "Mã QR cho " + pageUrl;
 </script>
 
 </body>
